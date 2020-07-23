@@ -1,0 +1,421 @@
+/*
+color scheme:
+-------------
+#0F7173 turquoise
+#DF3B57 dark pink
+#EE4B6A light pink
+#EF8354 peach
+#D8A47F pale pink
+
+font-family: 'Permanent Marker', cursive;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+
+body {
+    margin: 0;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;   
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #DF3B57;
+    font-size: 6rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #DF3B57;
+    font-size: 3rem;
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+h1:first-of-type:first-letter {
+    color: #EF8354;
+    text-shadow: 4px 4px 5px #DF3B57;
+    font-size: 10rem;
+}
+
+h2::before {
+    content: "->";
+    background-color: black;
+    color: #DF3B57;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    padding: 1rem;
+    margin: 0;
+}
+
+button {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+nav {
+    background-color: #DF3B57;
+}
+
+nav ul {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+ }
+
+nav a {
+    color: black;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+p a:link {
+    font-family: 'Permanent Marker', cursive;
+    color: #DF3B57;
+    text-decoration: none;
+}
+
+p a:visited {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    text-decoration: none;
+}
+
+p a:hover {
+    font-family: 'Permanent Marker', cursive;
+    color: #EF8354;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+p a:active {
+    font-family: 'Permanent Marker', cursive;
+    color: #EF8354;
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+.surprise {
+    display:none;
+    font-family: 'Permanent Marker', cursive;
+    color: #EF8354;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.crocodile:hover .surprise {
+    display: block;
+}
+
+
+
+
+.headerImageIndex {
+    background: url(images/home.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 0;
+    height: 70vh;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerImageInfos {
+    background: url(images/infos.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 0;
+    height: 70vh;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerImageKontakt {
+    background: url(images/kontakt.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 0;
+    height: 70vh;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerText {
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #DF3B57;
+    color: #DF3B57;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+
+}
+
+button:hover {
+    background-color: #EE4B6A;
+    color: black
+}
+
+article {
+    margin: 0;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.animalsArticle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.animalsSection {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    padding: 3rem;
+    margin: 3rem;
+    box-shadow: 10px 10px #DF3B57;
+    background-color: rgb(221, 221, 217);
+}
+
+.animalsSection ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.animalsSection li {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+
+dl {
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+dt {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 2rem;  
+}
+
+
+.video {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.embedContainer {   /* responsive iframe! */
+    position: relative;
+    width: calc(75vh * 1.77);
+    height: 75vh;
+    /*
+    width: 100%;
+    height: 0;
+    padding-bottom: 175%;
+    */
+}
+
+.embed-container iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+
+  
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #DF3B57;
+    color: black;
+}
+
+table {
+    width: 90%;
+    padding: 3rem;
+    margin: 3rem;
+    border-collapse: collapse;
+    border: 1px solid #DF3B57;
+    
+}
+
+th {
+    background-color: #DF3B57;
+    color: white;
+    padding: 1rem;
+    border: 1px solid #DF3B57;
+    
+
+}
+
+tr {
+    padding: 1rem;
+    border: 1px solid #DF3B57;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #ffa8a8;
+}
+
+tr:nth-child(even) {
+    background-color: #e4e4e4;
+}
+
+
+td {
+    padding: 1rem;
+    border: 1px solid #DF3B57;
+}
+
+select {
+    padding: 1rem;
+}
+
+div {
+    padding: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+label {
+    padding: 0.5rem;
+}
+
+legend {
+    padding: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.buttonReset {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgrey;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.buttonReset:hover {
+    background-color:rgb(165, 162, 162);
+    color: black
+}
+
+.contactFormInfo {
+    text-align: center;
+}
+
+.formLike {
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    background-color:white;
+    border: 3px solid #DF3B57;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.form {
+    display: flex;
+    margin: 1rem;    
+}
+
+.form2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form3 {
+    display: flex;
+}
+
+.formLabel {
+    flex-basis: 50%;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.buttonSubmit {
+    text-align: center;
+}
+
+input:focus-within {
+    background-color: #D8A47F;
+}
+
+/* 
+.formSelect {
+    background-color: lightgrey;
+    flex-basis: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+ */
